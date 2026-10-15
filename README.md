@@ -62,7 +62,7 @@ Tokens travel only in request headers or an ephemeral Git askpass helper. They a
 2. Select **Python 3**, **G4 GPU**, **High-RAM On**, and the latest runtime.
 3. Add the Colab Secrets above and enable notebook access.
 4. Leave `RUN_MODE = "pending"` and `PUBLISH = False`.
-5. Replace `PROJECT_REF` with a 40-character commit SHA from this repository. Never use a moving branch in production.
+5. Confirm `PROJECT_REF` is the immutable reviewer commit you intend to run. The checked-in notebook is already pinned; update it deliberately when upgrading. Never use a moving branch in production.
 6. Run all cells. The notebook installs pins, checks hardware, starts vLLM, tests OCR, and previews discovery.
 7. Inspect `runs/<run-id>/` for a deliberately seeded sandbox PR.
 8. Set `PUBLISH = True` only for the sandbox, inspect the preview, and approve the interactive confirmation.
