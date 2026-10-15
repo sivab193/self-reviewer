@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aayvu-reviewer"
+version = "0.1.0"
+description = "Colab-operated, local-model pull request reviewer for Aayvu"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "httpx==0.28.1",
+  "psutil==7.0.0",
+  "pydantic==2.11.7",
+  "PyYAML==6.0.2",
+  "rich==14.0.0",
+  "typer==0.16.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.1", "pytest-cov==6.2.1", "respx==0.22.0"]
+colab = ["huggingface-hub==0.33.4", "vllm==0.10.0"]
+
+[project.scripts]
+aayvu-reviewer = "aayvu_reviewer.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aayvu_reviewer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

@@ -1,0 +1,1 @@
+{"name":"Aayvu worker","instructions":["Apply the general rules.","Check idempotency, duplicate delivery, retries around paid calls, and terminal RunLog transitions.","Check timeouts, memory and document limits, encryption compatibility, provider error classification, and partial result persistence."]}

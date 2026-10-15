@@ -1,0 +1,1 @@
+{"name":"Aayvu backend","instructions":["Apply the general rules.","Check authentication, authorization, and tenant boundaries.","Check secret exposure, API compatibility, MongoDB correctness and indexes.","Check queue failure handling, packaging, dependencies, and AppSail configuration replacement hazards."]}

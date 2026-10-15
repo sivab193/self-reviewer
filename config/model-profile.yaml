@@ -1,0 +1,16 @@
+id: colab-g4-bf16
+model: Qwen/Qwen3-Coder-30B-A3B-Instruct
+# Immutable Hugging Face commit. verify_pins.py checks that it still resolves.
+revision: b2cff646eb4bb1d68355c01b18ae02e7cf42d120
+dtype: bfloat16
+served_model_name: qwen3-coder-30b-a3b-instruct
+host: 127.0.0.1
+port: 8000
+max_model_len: 32768
+gpu_memory_utilization: 0.90
+tensor_parallel_size: 1
+request_concurrency: 1
+cache_dir: /content/model-cache
+vllm_version: 0.10.0
+ocr_version: 1.13.0
+

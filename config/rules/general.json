@@ -1,0 +1,1 @@
+{"name":"Aayvu general","instructions":["Report actionable correctness, security, privacy, reliability, and material performance issues.","Require evidence from changed code and repository context.","Avoid style-only findings and speculative claims.","Account for backwards compatibility and cross-repository rollout order."]}
